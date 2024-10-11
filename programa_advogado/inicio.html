@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="/programa_advogado/css/font.css">
     <link rel="stylesheet" href="/programa_advogado/css/media.css">
     <link rel="shortcut icon" href="/programa_advogado/assets/images/logo_sem_fundo_verde.png" type="image/x-icon">
-    
     <title>Imobiliário - Thiago Barroso & Advogados Associados</title>
 </head>
 <body>
     <header>
         <img src="/programa_advogado/assets/images/logo_sem_fundo_verde.png" alt="logo-site">
-        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav id="menu" class="hidden">
             <a href="/programa_advogado/inicio.html">Início</a>
-            <a href="#about-us-group">Sobre</a>
-            <a href="#area-atuacao">Áreas de Atuação</a>
-            <a href="#camp-form">Fale Conosco</a>
+            <a href="/programa_advogado/inicio.html#about-us-group">Sobre</a>
+            <a href="/programa_advogado/inicio.html#area-atuacao">Áreas de Atuação</a>
+            <a href="/programa_advogado/inicio.html#camp-form">Fale Conosco</a>
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5531988600745&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es!">Advogado online</a>
         </nav>
     </header>
@@ -27,9 +31,9 @@
             <h2>Assistência Jurídica Especializada em</h2>
             <h1>Direito Imobiliário</h1>
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5531988600745&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es!">
-                    <button>
-                        <h3>Advogado Online</h3>
-                    </button>
+                <button>
+                    <h3>Advogado Online</h3>
+                </button>
             </a>
         </section>
         <aside>
@@ -41,20 +45,17 @@
         </aside>
         <section id="about-us-group">
             <h2>Quem Somos</h2>
-            <p id="about-us-p">Descubra a excelência em defesa jurídica, comprometidos com a ética, dedicação e resultados excepcionais. Oferece atendimento eficaz, justo e objetivo. Seja para pessoas naturais ou jurídicas, conte conosco para soluções jurídicas de alta qualidade.</p>
-
+            <p class="about-us-p">Descubra a excelência em defesa jurídica, comprometidos com a ética, dedicação e resultados excepcionais. Oferece atendimento eficaz, justo e objetivo. Seja para pessoas naturais ou jurídicas, conte conosco para soluções jurídicas de alta qualidade.</p>
             <section class="about-us-content">
-                <img id="about-us-foto" src="/programa_advogado/assets/images/foto_advogado2.webp" alt="foto-profissinal2">
+                <img class="about-us-foto" src="/programa_advogado/assets/images/foto_advogado2.webp" alt="foto-profissinal2">
                 <div class="about-us-text">
                     <h6>ADVOGADO SÓCIO</h6>
                     <h5>Thiago dos Santos Barroso</h5>
-                
-                        <p>Especialista em Direito Imobiliário, Família e Inventários;</p>
-                        <p>Pós-Graduado em Direito Processual pela PUC-Minas;  </p>                    
-                        <p>Atuou como advogado coordenador de área de grande escritório do ramo de direito securitário em Belo Horizonte/MG;</p>
-                        <p> Atuou como escrevente durante 3 anos no 4º Ofício de Registro de Imóveis de Belo Horizonte/MG.</p>
-                        <p>E-mail: thiago@barrosoemachado.com.br</p>
-                
+                    <p>Especialista em Direito Imobiliário, Família e Inventários;</p>
+                    <p>Pós-Graduado em Direito Processual pela PUC-Minas;  </p>                    
+                    <p>Atuou como advogado coordenador de área de grande escritório do ramo de direito securitário em Belo Horizonte/MG;</p>
+                    <p> Atuou como escrevente durante 3 anos no 4º Ofício de Registro de Imóveis de Belo Horizonte/MG.</p>
+                    <p>E-mail: thiago@barrosoemachado.com.br</p>
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=5531988600745&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es!">
                         <button>
                             <img src="/programa_advogado/assets/images/icone_wpp.png" alt="icone_wpp">
@@ -77,7 +78,7 @@
                 </div>
                 <div class="input-position">
                     <input required name="email" type="email" placeholder="E-mail">
-                    <select required name="hamburguer" class="hamburguer">
+                    <select required name="select-button" class="select-button">
                         <option value="Imobiliário">Imobiliário</option>    
                         <option value="Inventário">Inventário</option>
                         <option value="Divorcio Judicial">Divórcio Judicial</option>
@@ -107,8 +108,8 @@
         </section>
         <section id="area-atuacao">
             <h2>Áreas de Atuação</h2>
-            <div>
-                <section>
+            <div class="cards">
+                <section>   
                     <img loading="lazy" src="/programa_advogado/assets/images/image_inventario.jpg" alt="image_inventario">
                     <h4>Inventário</h4>
                 </section>
@@ -142,59 +143,53 @@
                 </button>
             </a>
         </section>
-
-
         <section class="iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15031.614350028365!2d-43.9012396!3d-19.6314192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x497288a84dc6ca2f%3A0x1bb249ce52d13513!2sThiago%20Barroso%20%26%20Advogados%20Associados!5e0!3m2!1spt-BR!2sbr!4v1728519168104!5m2!1spt-BR!2sbr" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="infos">
+            <div class="content-infos">
+                <div class="sala">
+                    <img src="/programa_advogado/assets/images/logo_sem_fundo_verde.png" alt="logo-site">
+                </div>
+                <div class="menu">
+                    <h5>Menu</h5>
+                    <nav>
+                        <a href="/programa_advogado/inicio.html">Início</a>
+                        <a href="#about-us-group">Sobre</a>
+                        <a href="#area-atuacao">Áreas de Atuação</a>
+                        <a href="#camp-form">Fale Conosco</a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5531988600745&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es!">Advogado online</a>
+                    </nav>
+                </div>
+                <div class="atendimento-group">
+                    <h5>Horário de atendimento</h5>
+                    <p>Segunda à Sexta: das 9h às 18h</p>
+                    <h5 id="localizacao">Localização</h5>
+                    <p>Av. Pref. João Daher, 1066 - Lundcéia, Lagoa Santa - MG, 33239-050</p>
+                </div>
+                <div class="contato-group">
+                    <h5>Contato</h5>
+                    <p>(31) 98860-0745</p>
+                    <div class="email">
+                        <h5>E-mail</h5>
+                        <p>thiago@barrosoemachado.com.br</p>
+                    </div>
+                    <div class="social">
+                        <a target="_blank" href="#" alt="facebook-icon"><img src="/programa_advogado/assets/images/facebook_icon.png"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/thiago-dos-santos-barroso-a191b5116/"><img src="/programa_advogado/assets/images/linkedin_icon.png" alt="linkedin-icon"></a>
+                        <a target="_blank" href="https://www.instagram.com/drthiagosbarroso/"><img src="/programa_advogado/assets/images/instagram_icon.png" alt="instagram-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <section class="infos">
-        <div class="content-infos">
-            <div class="Sala">
-                <img src="/programa_advogado/assets/images/logo_sem_fundo_verde.png" alt="logo-site">
-            </div>
-            <div id="menu">
-                <h5>Menu</h5>
-                <nav>
-                    <a href="/programa_advogado/inicio.html">Início</a>
-                    <a href="#about-us-group">Sobre</a>
-                    <a href="#area-atuacao">Áreas de Atuação</a>
-                    <a href="#camp-form">Fale Conosco</a>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5531988600745&text=Ol%C3%A1,%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es!">Advogado online</a>
-                </nav>
-            </div>
-            <div id="atendimento-group">
-                <h5>Horário de atendimento</h5>
-                <p>Segunda à Sexta: das 9h às 18h</p>
-                <h5 id="localizacao">Localização</h5>
-                <p>Av. Pref. João Daher, 1066 - Lundcéia, Lagoa Santa - MG, 33239-050</p>
-            </div>
-            <div id="contato-group">
-                <h5>Contato</h5>
-                <p>(31) 98860-0745</p>
-                <div id="email">
-                    <h5>E-mail</h5>
-                    <p>thiago@barrosoemachado.com.br</p>
-                </div>
-                <div class="social">
-                    <a target="_blank" href="#" alt="facebook-icon"><img src="/programa_advogado/assets/images/facebook_icon.png"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/thiago-dos-santos-barroso-a191b5116/"><img src="/programa_advogado/assets/images/linkedin_icon.png" alt="linkedin-icon"></a>
-                    <a target="_blank" href="https://www.instagram.com/drthiagosbarroso/"><img src="/programa_advogado/assets/images/instagram_icon.png" alt="instagram-icon"></a>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <h6>© Thiago Barroso & Advogados Associados - Todos Direitos Reservados</h6>    
     </footer>
 
-
-
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            
             emailjs.init({
               publicKey: "Jym0QUaiB3xEOn6yO",
             });
@@ -204,9 +199,7 @@
         window.onload = function() {
             document.getElementById('form-group').addEventListener('submit', function(event) {
                 event.preventDefault();
-    
                 document.getElementById('mensagem').style.display = 'block';
-    
                 emailjs.sendForm('service_71qqk7f', 'template_hvexcg1', this)
                     .then(() => {
                         console.log('SUCCESS!');
@@ -216,17 +209,24 @@
             });
         }
     </script>
-    
     <script>
         document.getElementById('form-group').addEventListener('submit', function(event) {
             event.preventDefault(); // Impede o envio do formulário
             document.getElementById('mensagem').style.display = 'block'; // Mostra a mensagem
         });
     </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
     
-
-</body>
-</html>
-
+            // Se o menu estiver visível, exibe o elemento, caso contrário, oculta
+            if (!menu.classList.contains('hidden')) {
+                elemento.style.display = 'block'; // Exibe o texto ao abrir o menu
+            } else {
+                elemento.style.display = 'none'; // Oculta o texto ao fechar o menu
+            }
+        }
+    </script>
 </body>
 </html>

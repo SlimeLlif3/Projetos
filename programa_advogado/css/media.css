@@ -1,27 +1,26 @@
-@media screen and (min-width: 1920px){
-    header {
+@media screen and (min-width: 1680px){
+    header{
         justify-content: space-between;
-      
-    }  
+    }
     header img{
         margin-left: 100px;
     } 
-    .camp-form{
-       padding-left: 110px;
-       justify-content: center;
-       height: 58vh;
+    #camp-form{
+        padding-left: 110px;
+        justify-content: center;
+        height: 65vh;       
     }
     .profissional-group{
         justify-content: center;
     }
     .content-infos{
-        justify-content: center;
+        justify-content: center;  
     }
     .sala img{
-        margin: 0px;
+        margin: 0;
     }
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1024px){
     header{
         height: 220px;
         flex-direction: column;
@@ -39,8 +38,7 @@
     #form-group input{
         width: 50vh
     }
-    .camp-form{
-        
+    #camp-form{
         justify-content: center;
         height: 650px;
         padding-left: 0;
@@ -60,8 +58,6 @@
     .sala img{
         display: none;
     }
-}
-@media screen and (max-width: 1024px){
     .posts div{
         display: flex;
         flex-direction: column;
@@ -77,34 +73,79 @@
         width: 350px;
         margin-left: 70px;
     }
+    .menu{
+        margin-left: 0;
+    }
+    #area-atuacao{
+        height: 2900px;
+    }
+    #area-atuacao div{
+        flex-direction: column;
+        margin: 0;
+    }
+    #area-atuacao div section{
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width: 768px){
-    .camp-form{
+    .hamburger{
+        display: flex
+    }
+    .hidden {
+        display: none;
+    }
+    header nav{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        top: 200px;
+        margin-right: 80px;
+        position: absolute;
+        width: 200px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: white;
+    }
+    header a{
+        padding: 20px;
+    }
+    header a:hover{
+        transform: scale(1);
+        font-size: 15px;
+    }
+    header a:not(:last-child)::after{
+        display: none;
+    }   
+    #camp-form{
         flex-direction: column;
         height: 1100px;
         justify-content: center;
         align-items: center;
     }
    #form-group{
-    max-width: 50%;
-    margin: 0 auto;
-    margin-top: 70px;
-    align-items: center;
+        max-width: 50%;
+        margin: 0 auto;
+        margin-top: 70px;
+        align-items: center;
    }
    .carregamento-group{
-    flex-direction: column;
+        flex-direction: column;
    }
    #form-group textarea{
-    width: 51vh
+        width: 51vh
    }
    .profissional-group{
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
     
    }
    .clients-group iframe{
-    width: 350px;
-    margin-left: 0px;
+        width: 350px;
+        margin-left: 0px;
     }
     .clients-group{
         margin-left: 0px;
@@ -112,6 +153,144 @@
     .menu{
         margin-left: 0px;
     }
+    .content-infos{
+        padding-inline: 30px;
+    }   
+    .about-us-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us-text{
+        margin-top: 60px;
+        max-width: 50%;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 375px){
+    .first-section img{
+        display: none;  
+    }
+    .first-section{
+        text-align: center;
+        padding-inline: 20px;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .first-section button{
+        width: 300px;
+    }
+    .first-section h1{
+        font-size: 50px;
+    }
+    .first-section h2{
+        font-size: 40px;
+    }
+   .line-post1{
+        padding-left: 30px;
+   }
+   .line-post2{
+        padding-left: 30px;
+   }
+   .posts button{
+        margin-left: 25px;
+   }
+   #form-group{
+        margin-top: 50px;
+   }
+   #form-group input{
+        width: 30vh;
+    }
+    #camp-form{
+        justify-content: center;
+        height: 1400px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 50px;
+    }
+    #form-group select{
+        margin-bottom: 38px;
+        margin-left: 25px;
+        width: 55vh;
+    }
+    .input-position{
+        max-width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    select{
+        max-width: 238px;     
+    }
+    textarea{
+        max-width: 205px;
+    }
+    .infos{
+        height: 1500px;
+    }
+    .content-infos{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .content-infos div{
+        margin: 0;
+        padding-top: 40px;
+        text-align: center;
+    }
+    footer h6{
+        font-size: 10px;
+    }
+    .social{
+        justify-content: center;
+        padding-left: 15px;
+    }
+    .about-us-content button{
+        width: 250px;
+    }
+    #about-us-group {
+       align-items: center;
+    }
+    #about-us-group h2{
+        text-align: center;
+    }
+    #area-atuacao div{
+        flex-direction: column;
+        margin: 0;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 320px){
+    .first-section h1{
+        font-size: 50px;
+    }
+    .first-section h2{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .posts h2{
+        font-size: 40px;
+    }
+    .line-post1 article p{
+        max-width: 90%;
+    }
+    .line-post1 article{
+        height: 480px;
+    }
+    .line-post2 article p{
+        max-width: 90%;
+     }
+     .line-post2 article{
+         height: 540px;
+     }
+     select{
+        max-width: 210px;
+     }
+     textarea{
+        max-width: 180px;
+     }
+     footer h6{
+        text-align: center;
+     }
 }
    
     
