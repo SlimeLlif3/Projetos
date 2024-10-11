@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(189, 189, 246);
+}
+main{
+    display: flex;
+    flex-direction: row; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    height: 85vh;
+}
+img{
+    width: 350px;
+}
+.sec_left{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 224, 191);
+    width: 600px;
+}
+.sec_right{
+    padding: 55px;
+    background-color: white;
+    width: 600px;
+   
+}
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 35px;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    background-color: #6c63ff;
+    width: 90px;
+    height: 7px;
+    position: absolute;
+    border-radius: 10px;
+}
+.entrar-btn{
+    width: 80px;
+    height: 30px;
+    background-color: #786CF7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.entrar-btn:hover{
+    background-color: #6b63fff1;
+
+}
+.forms{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+    width: 100%;
+}
+.column_1{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+.column_2{
+    display:  flex;
+    flex-direction: column;
+    width: 210px;
+}
+label{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+input:not([type="radio"]){
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;  
+    box-shadow: 1px 1px 6px  #0000001c;
+    border: none; 
+}
+.forms input:hover{
+    background-color: #eeeeee75;
+}
+.forms input::placeholder{
+    color: gray;
+}
+.forms input:focus-visible{
+    outline: 1px solid #6c63ff;
+    
+}
+.genero{
+    margin-top: 60px;
+}
+h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+.radio-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.continuar-btn{
+    width: 100%;
+    margin-top: 25px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: #786CF7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/programa_landing-page_cadastro/assets/css/style.css">
+    <title>Landing-Page Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="sec_left">
+            <img src="/programa_landing-page_cadastro/assets/images/image.svg" alt="imagem_controles">
+        </section>
+
+        <section class="sec_right">
+           <form action="#">
+            <section class="topo">
+                <h1>Cadastre-se</h1>
+                <button class="entrar-btn">Entrar</button>
+            </section>
+            <section class="forms">
+                    <div class="column_1">
+                        <label for ="nome">Primeiro Nome</label>
+                        <input name="nome" type="text" placeholder="Digite seu primeiro nome" required>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input name="sobrenome" type="text" placeholder="Digite seu sobrenome" required>
+                        <label for="email">E-mail</label>
+                        <input name="email" type="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="column_2">
+                        <label for="telefone">Celular</label>
+                        <input name="telefone" type="tel" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="senha">Senha</label>
+                        <input name="senha" type="password" placeholder="Digite sua senha" required>
+                        <label for="confirm_senha">Confirme sua senha</label>
+                        <input name="confirm_senha" type="password" placeholder="Confirme sua senha" required>
+                    </div>  
+            </section>
+            <section class="genero">
+                <h6>Gênero</h6>
+                <div class="radio-btns">
+                    <input name="checked" type="radio"> Feminino
+                    <input name="checked" type="radio"> Masculino
+                    <input name="checked" type="radio"> Outros
+                    <input name="checked" type="radio"> Prefiro não dizer
+                </div>
+                <button class="continuar-btn">Continuar</button>
+            </section>
+           </form>
+        </section>
+    </main>
+</body>
+</html>

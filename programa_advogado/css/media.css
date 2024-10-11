@@ -1,0 +1,120 @@
+@media screen and (min-width: 1920px){
+    header {
+        justify-content: space-between;
+      
+    }  
+    header img{
+        margin-left: 100px;
+    } 
+    .camp-form{
+       padding-left: 110px;
+       justify-content: center;
+       height: 58vh;
+    }
+    .profissional-group{
+        justify-content: center;
+    }
+    .content-infos{
+        justify-content: center;
+    }
+    .sala img{
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 1440px){
+    header{
+        height: 220px;
+        flex-direction: column;
+        text-align: center;
+    }
+    header img{
+        margin: 0;
+    }
+    header nav{
+        margin-left: 80px;
+    }
+    .input-position{
+        flex-direction: column;
+    }
+    #form-group input{
+        width: 50vh
+    }
+    .camp-form{
+        
+        justify-content: center;
+        height: 650px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #form-group select{
+        margin-bottom: 38px;
+        margin-left: 25px;
+        width: 55vh;
+    }
+    .clients-group iframe{
+        width: 600px;
+    }
+    .content-infos{
+        justify-content: center;
+    }
+    .sala img{
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px){
+    .posts div{
+        display: flex;
+        flex-direction: column;
+    }
+    .posts button{
+        width: 300px;
+        margin-right: 25px;
+    }
+    .posts{
+       text-align: center;
+    }
+    .clients-group iframe{
+        width: 350px;
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 768px){
+    .camp-form{
+        flex-direction: column;
+        height: 1100px;
+        justify-content: center;
+        align-items: center;
+    }
+   #form-group{
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;
+    align-items: center;
+   }
+   .carregamento-group{
+    flex-direction: column;
+   }
+   #form-group textarea{
+    width: 51vh
+   }
+   .profissional-group{
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .clients-group iframe{
+    width: 350px;
+    margin-left: 0px;
+    }
+    .clients-group{
+        margin-left: 0px;
+    }
+    .menu{
+        margin-left: 0px;
+    }
+}
+   
+    
+   
+   
+

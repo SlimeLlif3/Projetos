@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'merriweather bold';
+    src: url('/programa_advogado/assets/fonts/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'merriweather regular';
+    src: url('/programa_advogado/assets/fonts/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family: 'merriweather light';
+    src: url('/programa_advogado/assets/fonts/Merriweather-Light.ttf');
+}
+@font-face {
+    font-family: 'playfair display bold';
+    src: url('/programa_advogado/assets/fonts/PlayfairDisplay-Bold.ttf');
+}
+@font-face {
+    font-family: 'playfair display regular';
+    src: url('/programa_advogado/assets/fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font-family: 'playfair display medium';
+    src: url('/programa_advogado/assets/fonts/PlayfairDisplay-Medium.ttf');
+}
+@font-face {
+    font-family: 'open sans';
+    src: url('/programa_advogado/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
